@@ -9,7 +9,7 @@
     <meta name="description" content="Celulares, accesorios y servicio técnico en Tecnomacxs.">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- Fuentes e iconos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,7 +93,7 @@
 
     <div class="hero-image">
         <img
-            src="../img/celulares.escenario.png"
+            src="img/celulares.escenario.png"
             alt="Celulares de Tecnomacxs"
             class="hero-phones"
         >
@@ -175,7 +175,7 @@
     <div class="service-grid">
 
         <article class="service-card">
-            <img src="../img/servicio-pantalla.jpg"
+            <img src="img/servicio-pantalla.jpg"
                  alt="Cambio de pantalla"
                  onerror="this.style.display='none'">
 
@@ -190,7 +190,7 @@
         </article>
 
         <article class="service-card">
-            <img src="../img/servicio-bateria.jpg"
+            <img src="img/servicio-bateria.jpg"
                  alt="Cambio de batería"
                  onerror="this.style.display='none'">
 
@@ -205,7 +205,7 @@
         </article>
 
         <article class="service-card">
-            <img src="../img/servicio-camara.jpg"
+            <img src="img/servicio-camara.jpg"
                  alt="Reparación de cámara"
                  onerror="this.style.display='none'">
 
@@ -220,7 +220,7 @@
         </article>
 
         <article class="service-card">
-            <img src="../img/servicio-reparacion.jpg"
+            <img src="img/servicio-reparacion.jpg"
                  alt="Otros servicios técnicos"
                  onerror="this.style.display='none'">
 
@@ -251,7 +251,7 @@
     <div class="accessory-grid">
 
         <article class="accessory-card">
-            <img src="../img/carcasas.jpg"
+            <img src="img/carcasas.jpg"
                  alt="Carcasas para celulares"
                  onerror="this.style.display='none'">
             <h3>Carcasas</h3>
@@ -261,7 +261,7 @@
         </article>
 
         <article class="accessory-card">
-            <img src="../img/laminas.jpg"
+            <img src="img/laminas.jpg"
                  alt="Láminas protectoras"
                  onerror="this.style.display='none'">
             <h3>Láminas protectoras</h3>
@@ -271,7 +271,7 @@
         </article>
 
         <article class="accessory-card">
-            <img src="../img/accesorios.jpg"
+            <img src="img/accesorios.jpg"
                  alt="Accesorios para celulares"
                  onerror="this.style.display='none'">
             <h3>Accesorios</h3>
@@ -281,7 +281,7 @@
         </article>
 
         <article class="accessory-card">
-            <img src="../img/decoracion.jpg"
+            <img src="img/decoracion.jpg"
                  alt="Decoración para celulares"
                  onerror="this.style.display='none'">
             <h3>Decoración</h3>
@@ -416,9 +416,10 @@
 
             tarjeta.innerHTML = `
                 <div class="product-image">
-                    <img src="../img/${celular.imagen}"
+                    <img src="img/${celular.imagen}"
                          alt="${celular.modelo}"
-                         loading="lazy">
+                        loading="lazy"
+                        onerror="this.onerror=null; this.src='img/celulares.escenario.png'">
                 </div>
 
                 <div class="product-info">
