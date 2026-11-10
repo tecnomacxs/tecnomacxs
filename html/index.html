@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tecnomacxs | Tienda de celulares y accesorios</title>
+    <meta name="description" content="Celulares, accesorios y servicio técnico en Tecnomacxs.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Fuentes e iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+    <a href="#inicio" class="logo">TECNO<span>MACXS</span></a>
+
+    <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#celulares">Celulares</a>
+        <a href="#servicio">Servicio técnico</a>
+        <a href="#accesorios">Accesorios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="nav-whatsapp"
+       href="https://wa.me/569XXXXXXXXX"
+       target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+    </a>
+</header>
+
+
+<!-- ================= PORTADA ================= -->
+
+<main>
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+        <span class="hero-tag">TECNOLOGÍA A TU ALCANCE</span>
+
+        <h1>
+            Tu próximo celular
+            <span>está aquí.</span>
+        </h1>
+
+        <p>
+            Bienvenido a Tecnomacxs. Encuentra celulares,
+            accesorios y soluciones para tus dispositivos.
+            Queremos ayudarte a elegir lo que necesitas.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#celulares" class="btn-primary">
+                Ver celulares
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#contacto" class="btn-secondary">
+                Contáctanos
+            </a>
+        </div>
+
+        <div class="hero-benefits">
+            <div>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Celulares</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Servicio técnico</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-heart"></i>
+                <span>Accesorios</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="../img/celulares.escenario.png"
+            alt="Celulares de Tecnomacxs"
+            class="hero-phones"
+        >
+    </div>
+
+</section>
+
+
+<!-- ================= PRESENTACIÓN ================= -->
+
+<section class="about-section">
+    <div class="about-card">
+        <span class="section-tag">CONOCE NUESTRA TIENDA</span>
+
+        <h2>Más que tecnología, queremos ayudarte.</h2>
+
+        <p>
+            En Tecnomacxs encontrarás celulares, accesorios
+            y alternativas de servicio técnico. Nuestro objetivo
+            es ofrecerte atención cercana y ayudarte a encontrar
+            la mejor opción para ti.
+        </p>
+
+        <p class="about-extra">
+            <!-- Puedes reemplazar este texto por tu propia historia -->
+            Somos una tienda enfocada en tecnología móvil,
+            calidad y atención personalizada.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= CATÁLOGO DE CELULARES ================= -->
+
+<section class="catalog-section" id="celulares">
+
+    <div class="section-heading">
+        <span class="section-tag">ENCUENTRA TU EQUIPO IDEAL</span>
+        <h2>Catálogo de <strong>celulares</strong></h2>
+        <p>Explora nuestros modelos disponibles.</p>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Buscar por modelo, marca o característica..."
+            aria-label="Buscar celulares"
+        >
+    </div>
+
+    <p class="results-text" id="resultsText">
+        Mostrando nuestros celulares
+    </p>
+
+    <!-- AQUÍ SE CARGAN LOS 20 CELULARES -->
+    <div class="product-grid" id="productGrid"></div>
+
+    <p class="empty-message" id="emptyMessage" hidden>
+        No encontramos ese modelo. Prueba con otra búsqueda.
+    </p>
+
+</section>
+
+
+<!-- ================= SERVICIO TÉCNICO ================= -->
+
+<section class="service-section" id="servicio">
+
+    <div class="section-heading">
+        <span class="section-tag">CUIDAMOS TU DISPOSITIVO</span>
+        <h2>Servicio <strong>técnico</strong></h2>
+        <p>Consulta por reparaciones y repuestos.</p>
+    </div>
+
+    <div class="service-grid">
+
+        <article class="service-card">
+            <img src="../img/servicio-pantalla.jpg"
+                 alt="Cambio de pantalla"
+                 onerror="this.style.display='none'">
+
+            <div class="service-info">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Cambio de pantallas</h3>
+                <p>Consulta por modelos, repuestos y disponibilidad.</p>
+                <strong>Precio: consultar</strong>
+                <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20cambio%20de%20pantalla"
+                   target="_blank" class="btn-buy">Consultar</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="../img/servicio-bateria.jpg"
+                 alt="Cambio de batería"
+                 onerror="this.style.display='none'">
+
+            <div class="service-info">
+                <i class="fa-solid fa-battery-half"></i>
+                <h3>Cambio de baterías</h3>
+                <p>Consulta por reemplazos y diagnóstico.</p>
+                <strong>Precio: consultar</strong>
+                <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20una%20bateria"
+                   target="_blank" class="btn-buy">Consultar</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="../img/servicio-camara.jpg"
+                 alt="Reparación de cámara"
+                 onerror="this.style.display='none'">
+
+            <div class="service-info">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Cámaras</h3>
+                <p>Consulta por problemas y repuestos de cámara.</p>
+                <strong>Precio: consultar</strong>
+                <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20la%20camara"
+                   target="_blank" class="btn-buy">Consultar</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="../img/servicio-reparacion.jpg"
+                 alt="Otros servicios técnicos"
+                 onerror="this.style.display='none'">
+
+            <div class="service-info">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Otras reparaciones</h3>
+                <p>Otros repuestos, accesorios y soluciones.</p>
+                <strong>Precio: consultar</strong>
+                <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20una%20reparacion"
+                   target="_blank" class="btn-buy">Consultar</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- ================= ACCESORIOS ================= -->
+
+<section class="accessory-section" id="accesorios">
+
+    <div class="section-heading">
+        <span class="section-tag">DETALLES QUE MARCAN LA DIFERENCIA</span>
+        <h2>Accesorios y <strong>decoración</strong></h2>
+        <p>Personaliza y protege tu celular.</p>
+    </div>
+
+    <div class="accessory-grid">
+
+        <article class="accessory-card">
+            <img src="../img/carcasas.jpg"
+                 alt="Carcasas para celulares"
+                 onerror="this.style.display='none'">
+            <h3>Carcasas</h3>
+            <p>Diseños y modelos para distintos celulares.</p>
+            <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20ver%20carcasas"
+               target="_blank">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="accessory-card">
+            <img src="../img/laminas.jpg"
+                 alt="Láminas protectoras"
+                 onerror="this.style.display='none'">
+            <h3>Láminas protectoras</h3>
+            <p>Protección para la pantalla de tu equipo.</p>
+            <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20ver%20laminas"
+               target="_blank">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="accessory-card">
+            <img src="../img/accesorios.jpg"
+                 alt="Accesorios para celulares"
+                 onerror="this.style.display='none'">
+            <h3>Accesorios</h3>
+            <p>Cables, cargadores y otros complementos.</p>
+            <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20ver%20accesorios"
+               target="_blank">Consultar por WhatsApp</a>
+        </article>
+
+        <article class="accessory-card">
+            <img src="../img/decoracion.jpg"
+                 alt="Decoración para celulares"
+                 onerror="this.style.display='none'">
+            <h3>Decoración</h3>
+            <p>Detalles para darle tu propio estilo al celular.</p>
+            <a href="https://wa.me/569XXXXXXXXX?text=Hola,%20quiero%20ver%20decoraciones"
+               target="_blank">Consultar por WhatsApp</a>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACTO ================= -->
+
+<section class="contact-section" id="contacto">
+
+    <div class="contact-content">
+        <span class="section-tag">ESTAMOS PARA AYUDARTE</span>
+
+        <h2>¿Necesitas ayuda o buscas un producto?</h2>
+
+        <p>
+            Escríbenos directamente. Te ayudaremos con tus
+            consultas sobre celulares, accesorios y reparaciones.
+        </p>
+
+        <a href="https://wa.me/569XXXXXXXXX"
+           target="_blank" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            Hablar por WhatsApp
+        </a>
+
+        <div class="business-data">
+            <p><i class="fa-solid fa-location-dot"></i> Ubicación: AGREGAR CIUDAD</p>
+            <p><i class="fa-solid fa-clock"></i> Horario: AGREGAR HORARIO</p>
+            <p><i class="fa-solid fa-envelope"></i> Correo: AGREGAR CORREO</p>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <a href="#inicio" class="footer-logo">TECNO<span>MACXS</span></a>
+
+    <p>Tu espacio de tecnología móvil.</p>
+
+    <div class="social-links">
+
+        <!-- Reemplaza los # con tus enlaces reales -->
+
+        <a href="#" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" target="_blank" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://wa.me/569XXXXXXXXX"
+           target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Tecnomacxs. Todos los derechos reservados.
+    </div>
+
+</footer>
+
+
+<!-- ================= DATOS Y BUSCADOR ================= -->
+
+<script>
+    /*
+      EDITA TUS PRODUCTOS AQUÍ.
+      Para cada celular cambia modelo, precio, especificaciones
+      e imagen. La imagen debe estar guardada dentro de img.
+    */
+
+    const whatsapp = "569XXXXXXXXX";
+
+    const celulares = [
+        { modelo: "iPhone 16 Pro Max", precio: "Consultar precio", specs: "Pantalla Super Retina · Cámara avanzada · 5G", imagen: "16promax.png" },
+        { modelo: "iPhone 16 Pro", precio: "Consultar precio", specs: "Pantalla ORIGNAL · Cámara Pro · 5G", imagen: "iphone16pro.png" },
+        { modelo: "iPhone 16", precio: "Consultar precio", specs: "Diseño moderno · Cámara avanzada · 5G", imagen: "ione16.png" },
+        { modelo: "iPhone 16 Plus", precio: "Consultar precio", specs: "Pantalla amplia · Gran rendimiento · 5G", imagen: "iphone167pluss.png" },
+        { modelo: "iPhone 15 Pro Max", precio: "Consultar precio", specs: "Cámara Pro · Pantalla ORIGINAL · 5G", imagen: "ion15promax.png" },
+        { modelo: "iPhone 15 Pro", precio: "Consultar precio", specs: "Diseño premium · Cámara Pro · 5G", imagen: "iiio15pro.png" },
+        { modelo: "iPhone 15", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara avanzada · 5G", imagen: "ion15.png" },
+        { modelo: "iPhone 15 Plus", precio: "Consultar precio", specs: "Pantalla amplia · Cámara dual · 5G", imagen: "ion15plus.png" },
+        { modelo: "iPhone 14 Pro Max", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara Pro · 5G", imagen: "ion14promax.png" },
+        { modelo: "iPhone 14 Pro", precio: "Consultar precio", specs: "Cámara Pro · Pantalla ORIGINAL · 5G", imagen: "ionn14pro.png" },
+        { modelo: "iPhone 14", precio: "Consultar precio", specs: "Cámara dual · Pantalla ORIGINAL · 5G", imagen: "iphone14.png" },
+        { modelo: "iPhone 13 Pro Max", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara triple · 5G", imagen: "iphone-rosa.png" },
+        { modelo: "iPhone 13 Pro", precio: "Consultar precio", specs: "Cámara triple · Pantalla ORIGINAL · 5G", imagen: "iphone-azul.png" },
+        { modelo: "iPhone 13", precio: "Consultar precio", specs: "Cámara dual · Pantalla ORIGINAL · 5G", imagen: "iphone-morado.png" },
+        { modelo: "iPhone 12", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara dual · 5G", imagen: "iphone-rosa.png" },
+        { modelo: "Samsung Galaxy S24", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara avanzada · 5G", imagen: "iphone-azul.png" },
+        { modelo: "Samsung Galaxy A55", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara triple · 5G", imagen: "iphone-morado.png" },
+        { modelo: "Samsung Galaxy A35", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Batería de larga duración", imagen: "iphone-rosa.png" },
+        { modelo: "Xiaomi Redmi Note", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Cámara de alta resolución", imagen: "iphone-azul.png" },
+        { modelo: "Motorola Moto G", precio: "Consultar precio", specs: "Pantalla ORIGINAL · Batería de larga duración", imagen: "iphone-morado.png" }
+    ];
+
+    const productGrid = document.getElementById("productGrid");
+    const searchInput = document.getElementById("searchInput");
+    const resultsText = document.getElementById("resultsText");
+    const emptyMessage = document.getElementById("emptyMessage");
+
+    function mostrarCelulares(lista) {
+        productGrid.innerHTML = "";
+
+        lista.forEach(celular => {
+            const mensaje = encodeURIComponent(
+                "Hola, quiero consultar por el " + celular.modelo
+            );
+
+            const tarjeta = document.createElement("article");
+            tarjeta.className = "product-card";
+
+            tarjeta.innerHTML = `
+                <div class="product-image">
+                    <img src="../img/${celular.imagen}"
+                         alt="${celular.modelo}"
+                         loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-label">TECNO MACXS</span>
+                    <h3>${celular.modelo}</h3>
+                    <p class="specs">${celular.specs}</p>
+                    <p class="price">${celular.precio}</p>
+
+                    <a class="btn-buy"
+                       href="https://wa.me/${whatsapp}?text=${mensaje}"
+                       target="_blank">
+                       <i class="fa-brands fa-whatsapp"></i>
+                       Consultar por WhatsApp
+                    </a>
+                </div>
+            `;
+
+            productGrid.appendChild(tarjeta);
+        });
+
+        resultsText.textContent =
+            "Mostrando " + lista.length + " de " + celulares.length + " celulares";
+
+        emptyMessage.hidden = lista.length !== 0;
+    }
+
+    searchInput.addEventListener("input", function () {
+        const busqueda = this.value
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+
+        const filtrados = celulares.filter(celular => {
+            const texto = (
+                celular.modelo + " " +
+                celular.specs
+            ).toLowerCase().normalize("NFD")
+             .replace(/[\u0300-\u036f]/g, "");
+
+            return texto.includes(busqueda);
+        });
+
+        mostrarCelulares(filtrados);
+    });
+
+    mostrarCelulares(celulares);
+</script>
+
+</body>
+</html>
